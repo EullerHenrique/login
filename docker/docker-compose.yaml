@@ -1,0 +1,45 @@
+version: '3.9'
+
+services:
+  postgres:
+      image: postgres:latest
+      container_name: postgres
+      environment:
+        POSTGRES_DB: keycloak
+        POSTGRES_USER: euller
+        POSTGRES_PASSWORD: 12345
+      volumes:
+        - ./postgres:/var/lib/postgresql/data
+  keycloak:
+      image: quay.io/keycloak/keycloak:legacy
+      container_name: keycloak
+      environment:
+        DB_VENDOR: POSTGRES
+        DB_ADDR: postgres
+        DB_DATABASE: keycloak
+        DB_SCHEMA: public
+        DB_USER: euller
+        DB_PASSWORD: 12345
+        KEYCLOAK_USER: admin
+        KEYCLOAK_PASSWORD: 12345
+        KEYCLOAK_DEFAULT_THEME: keycloak.tp
+      ports:
+        - 8081:8080
+      depends_on:
+        - postgres
+      volumes:
+        - ./themes/keycloak.tp:/opt/jboss/keycloak/themes/keycloak.tp
+        - ./themes/base.tp:/opt/jboss/keycloak/themes/base.tp
+  mailhog:
+    image: mailhog/mailhog
+    container_name: mailhog
+    ports:
+      - 1025:1025 # smtp
+      - 8025:8025 # web
+volumes:
+    postgres: {}
+    keycloak.tp: {}
+    base.tp: {}
+
+
+
