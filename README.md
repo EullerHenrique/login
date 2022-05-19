@@ -30,9 +30,10 @@
 ## Front-End
  
   1. Abra a pasta login_fron-end em uma IDE (Ex: Visual Studio Code) 
-  2. Abra o terminal
-  3. Digite npm install
-  4. Digite npm start
+  2. Instale o node.js (https://nodejs.org/en/download/)
+  3. Abra o terminal
+  4. Digite npm install
+  5. Digite npm start
 
 ## Back-End
   
