@@ -52,7 +52,10 @@
 
 - localhost:8082/login
 
-<img width="640" alt="Captura de tela 2022-05-19 162640" src="https://user-images.githubusercontent.com/48317736/169388907-9316b263-74aa-48c8-afc6-0f7235272154.png">
+  1. Usuário: euller Senha: 12345     
+  2. Usuário: admin Senha: 12345
+
+<img width="637" alt="Captura de tela 2022-05-19 165242" src="https://user-images.githubusercontent.com/48317736/169392458-fcba3198-f556-4d03-9011-755793ee5939.png">
 
 - localhost:8082/user
 
@@ -66,7 +69,11 @@
 
 - localhost:8080/user
 
+<img width="373" alt="Captura de tela 2022-05-19 164846" src="https://user-images.githubusercontent.com/48317736/169391369-a2a3394c-9230-48ca-9051-022bc86f9240.png">
+
 - localhost:8080/admin
+
+<img width="377" alt="Captura de tela 2022-05-19 164933" src="https://user-images.githubusercontent.com/48317736/169391382-51e1738b-0878-4866-b336-38d09dba76ed.png">
 
 # Diagrama
 
