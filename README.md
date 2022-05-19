@@ -3,16 +3,20 @@
 ## Tecnologias Utilizadas
 
 ### Front-End
+ 
+ - Typescript
  - Node.JS
+ - Express
+ - EJS
  - KeyCloak
 
 ### Back-End
 
  - Java
  - Spring Boot
- - KeyCloak
  - Docker
  - Lombok
+ - KeyCloak
 
 ## Execução Docker
   
