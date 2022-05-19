@@ -64,11 +64,9 @@
 
 ## Back-End
 
-localhost:8080/login
+- localhost:8080/user
 
-localhost:8080/user
-
-localhost:8080/admin
+- localhost:8080/admin
 
 # Diagrama
 
