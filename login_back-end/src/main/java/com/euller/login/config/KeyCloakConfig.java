@@ -6,8 +6,12 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class KeyCloakConfig {
+
+    //Define que o arquivo de propriedades do spring boot (application.properties) deve ser utilizado
+    //ao invés do keycloak.json
     @Bean
     public KeycloakSpringBootConfigResolver keycloakSpringBootConfigResolver(){
         return new KeycloakSpringBootConfigResolver();
     }
+
 }

@@ -1,17 +1,16 @@
 package com.euller.login.controller;
 
 import com.euller.login.service.LoginService;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.security.Principal;
 
 @RestController
 @RequestMapping("/")
+@RequiredArgsConstructor
 public class LoginController {
-
-    @Autowired
-    private LoginService loginService;
+    private final LoginService loginService;
 
     @GetMapping("/user")
     public String getUser(Principal principal) {
