@@ -18,6 +18,7 @@ Identy Brokering and Social Login: Facilidade em adicionar botões de login pela
 
 User Federation: Integração com LDAP ou Active Directory ou até mesmo criar seu próprio provider, caso você tenha seus usuários em outro banco de dados relacional.
 "
+
 "
 Ele permite que os desenvolvedores se concentrem na funcionalidade de negócios, não tendo que se preocupar com os aspectos de segurança da autenticação,
 seja integrando diretamente uma biblioteca que suporta um dos dois protocolos ou usando um módulo no servidor web ou um adaptador Keycloak (não exaustivo lista de possibilidades)
