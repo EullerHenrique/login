@@ -1,3 +1,73 @@
+# Conceito
+
+"Keycloak é um software de código aberto que permite configurar um único método de autenticação por meio do gerenciamento por identidade e por acesso."
+
+
+"
+Em vez de fazer login em aplicativos individuais, os usuários se autenticam no Keycloak. Isso significa que os aplicativos individuais não precisam implementar seus próprios formulários de login, autenticação e armazenamento de usuários e sessões. Depois de fazer login no Keycloak, os usuários não precisam fazer login novamente para acessar um aplicativo diferente. Da mesma forma, uma vez desconectado do Keycloak, os usuários não precisam sair dos aplicativos individuais. Habilitar o login com redes sociais também é fácil. A configuração para esses itens pode ser adicionada no console administrativo do Keycloak. Nenhum código ou alteração é necessário para as aplicações.
+
+Single-Sign on: Possibilita que o usuário faça login apenas uma vez para acessar todos os sistemas que estejam configurados no keycloak.
+
+Admin Console: O keycloak possui um excelente console administrativo, que facilita muito o cadastro de novos clientes, usuários, roles etc.
+
+Standard Protocols: Keycloak e baseado em protocolos padrão e fornece suporte para OpenID Conect, Oauth 2.0 e SAML.
+
+Client Adapters: Para Jaja, Wildfly, Jboss EAP, JavaScript, Suse, Tomcat, Jetty entre outros, tornando a integração mais fácil.
+
+Identy Brokering and Social Login: Facilidade em adicionar botões de login pelas redes sociais, como facebook, twitter, github, google entre outras.
+
+User Federation: Integração com LDAP ou Active Directory ou até mesmo criar seu próprio provider, caso você tenha seus usuários em outro banco de dados relacional.
+"
+"
+Ele permite que os desenvolvedores se concentrem na funcionalidade de negócios, não tendo que se preocupar com os aspectos de segurança da autenticação,
+seja integrando diretamente uma biblioteca que suporta um dos dois protocolos ou usando um módulo no servidor web ou um adaptador Keycloak (não exaustivo lista de possibilidades)
+Ser capaz de centralizar a autenticação e, portanto, habilitar a autenticação de logon único (SSO)
+Ser capaz de unificar os métodos de autenticação e fazê-los evoluir sem modificar as aplicações.
+Reinventar a autenticação de aplicativos SaaS e, assim, controlar a proliferação de identidades digitais; A desativação de contas é simplificada (excluir uma conta SaaS quando um funcionário sai) não é mais esquecido.
+
+"
+
+"
+Keycloak fornece páginas de login totalmente personalizáveis, incluindo autenticação forte, também com vários fluxos, como recuperação de senhas, exigindo que os usuários atualizem regularmente suas senhas,
+aceitação de termos/ condições e muito mais.
+
+Todas as páginas visíveis para seus usuários suportam temas personalizados, tornando muito fácil modificar a aparência das páginas para integrar-se à sua marca corporativa e aos aplicativos existentes.
+Ao delegar autenticação ao Keycloak, seus aplicativos não precisam se preocupar com diferentes mecanismos de autenticação ou como armazenar senhas com segurança. Esta abordagem também fornece um nível
+mais alto de segurança, pois os aplicativos não têm acesso direto ao usuário e credenciais, eles recebem, em vez disso, tokens de segurança que lhes dão apenas acesso para o que eles precisam.
+
+O Keycloak fornece login único, bem como recursos de gerenciamento de sessão, permitindo que os usuários acessem vários aplicativos, tendo apenas que se autenticar uma vez. Todos os usuários e administradores
+têm total visibilidade de onde os usuários são autenticados e pode encerrar sessões remotamente quando necessário.
+
+Keycloak baseia-se em protocolos padrões da indústria com suporte para OAuth 2.0, OpenID Connect, e SAML 2.0. O uso de protocolos padrões da indústria é importante tanto do ponto de vista de segurança e perspectiva 
+em termos de tornar mais fácil a integração com aplicativos já existentes com aplicativos novos ou aplicativos de terceiros.
+
+Realm
+
+Um realm gerencia um conjunto de usuários, credenciais, funções e grupos. Um usuário que pertence a ele,
+e ele efetua login nesse realm. Realms são isolados uns dos outros e só podem gerenciar e autenticar os
+usuários que pertencem a ele.
+
+Client
+
+Clients são entidades que podem solicitar o Keycloak para autenticar um usuário. Na maioria das vezes,
+os clients são aplicativos e serviços que desejam usar o Keycloak para se proteger e fornecer uma solução
+de logon único. Os clients também podem ser entidades que desejam apenas solicitar informações de identidade
+ou um token de acesso, para que possam invocar com segurança outros serviços na rede protegidos pelo Keycloak.
+
+Realm Role
+
+As aplicações geralmente atribuem acesso e permissões a funções específicas, em vez de usuários individuais,
+pois lidar com usuários pode ser muito difícil de gerenciar. Vamos criar app-user e app-admin roles realm, 
+atribuindo as roles correspondente ao gateway-microservice (user, admin).
+
+User
+
+Usuários são entidades capazes de efetuar login no seu sistema. Eles podem ter atributos associados
+a eles mesmos, como e-mail, nome de usuário, endereço, número de telefone e dia do nascimento.
+Eles podem ser associados ao grupo e ter roles específicas atribuídas a eles.
+
+"
+
 # Tecnologias Utilizadas
 
 ## Front-End
