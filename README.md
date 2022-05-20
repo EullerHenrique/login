@@ -48,20 +48,33 @@ Eles podem ser associados ao grupo e ter roles específicas atribuídas a eles.
 "
 Em vez de fazer login em aplicativos individuais, os usuários se autenticam no Keycloak. Isso significa que os aplicativos individuais não precisam implementar seus próprios formulários de login, autenticação e armazenamento de usuários e sessões. Depois de fazer login no Keycloak, os usuários não precisam fazer login novamente para acessar um aplicativo diferente. Da mesma forma, uma vez desconectado do Keycloak, os usuários não precisam sair dos aplicativos individuais. Habilitar o login com redes sociais também é fácil. A configuração para esses itens pode ser adicionada no console administrativo do Keycloak. Nenhum código ou alteração é necessário para as aplicações.
 
-Single-Sign on: Possibilita que o usuário faça login apenas uma vez para acessar todos os sistemas que estejam configurados no keycloak.
-
-Admin Console: O keycloak possui um excelente console administrativo, que facilita muito o cadastro de novos clientes, usuários, roles etc.
-
-Standard Protocols: Keycloak e baseado em protocolos padrão e fornece suporte para OpenID Conect, Oauth 2.0 e SAML.
-
-Client Adapters: Para Jaja, Wildfly, Jboss EAP, JavaScript, Suse, Tomcat, Jetty entre outros, tornando a integração mais fácil.
-
-Identy Brokering and Social Login: Facilidade em adicionar botões de login pelas redes sociais, como facebook, twitter, github, google entre outras.
-
-User Federation: Integração com LDAP ou Active Directory ou até mesmo criar seu próprio provider, caso você tenha seus usuários em outro banco de dados relacional.
+"
 "
 
+O Keycloak possui uma série de funcionalidades que são de interesse de desenvolvedores que querem colocar uma camada de autenticação unificada em suas aplicações, são elas:
+- Single-Sign On e Single-Sign Out
+- Suporte à OpenID Connect
+- Suporte à OAuth 2.0
+- Suporte à SAML
+- Identity Brokering – Autentique com OpenID Connect externo ou provedores de identidade SAML
+- Login social – Habilite o login com Google, GitHub, Facebook, Twitter e outras redes sociais
+- Federação do usuário – Sincronize usuários de servidores LDAP e Active Directory
+- Kerberos bridge – Autentique automaticamente os usuários que estão logados em um servidor Kerberos
+- Console Admin para gerenciamento central de usuários, funções, mapeamentos de funções, clientes e configuração
+- Console de gerenciamento de contas que permite aos usuários gerenciar centralmente suas contas
+- Suporte a temas – personalize todas as páginas voltadas para o usuário para integrá-las aos seus aplicativos e marcas
+- Autenticação de dois fatores – suporte para TOTP / HOTP via Google Authenticator ou FreeOTP
+- Fluxos de login – auto-registro opcional do usuário, recuperar senha, verificar e-mail, exigir atualização de senha etc.
+- Gerenciamento de sessão – os próprios administradores e usuários podem visualizar e gerenciar as sessões do usuário
+- Mapeadores de tokens – Mapeie atributos de usuário, funções e demais recursos como desejar em tokens e instruções
+- Suporte a CORS – os adaptadores de cliente possuem suporte integrado para CORS
+- Service Provider Interfaces (SPI) – uma série de SPIs para permitir a personalização de vários aspectos do servidor. Fluxos de autenticação, provedores de federação - de usuário, mapeadores de protocolo e muito mais
+- Adaptadores de cliente para aplicativos JavaScript, WildFly, JBoss EAP, Fuse, Tomcat, Jetty, Spring etc.
+- Suporta qualquer plataforma/linguagem que tenha uma biblioteca OpenID Connect Relying Party ou biblioteca de provedor de serviços SAML 2.0
+- 
 "
+"
+
 A intenção da ferramenta é facilitar a proteção de aplicativos e serviços com pouca ou nenhuma criptografia.
 Um IdP permite que um aplicativo (geralmente chamado de Provedor de Serviços ou SP) delegue sua autenticação.
 
