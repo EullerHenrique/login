@@ -1,34 +1,9 @@
 # Conceito
 
-"Keycloak é um software de código aberto que permite configurar um único método de autenticação por meio do gerenciamento por identidade e por acesso."
-
-
-"
-Em vez de fazer login em aplicativos individuais, os usuários se autenticam no Keycloak. Isso significa que os aplicativos individuais não precisam implementar seus próprios formulários de login, autenticação e armazenamento de usuários e sessões. Depois de fazer login no Keycloak, os usuários não precisam fazer login novamente para acessar um aplicativo diferente. Da mesma forma, uma vez desconectado do Keycloak, os usuários não precisam sair dos aplicativos individuais. Habilitar o login com redes sociais também é fácil. A configuração para esses itens pode ser adicionada no console administrativo do Keycloak. Nenhum código ou alteração é necessário para as aplicações.
-
-Single-Sign on: Possibilita que o usuário faça login apenas uma vez para acessar todos os sistemas que estejam configurados no keycloak.
-
-Admin Console: O keycloak possui um excelente console administrativo, que facilita muito o cadastro de novos clientes, usuários, roles etc.
-
-Standard Protocols: Keycloak e baseado em protocolos padrão e fornece suporte para OpenID Conect, Oauth 2.0 e SAML.
-
-Client Adapters: Para Jaja, Wildfly, Jboss EAP, JavaScript, Suse, Tomcat, Jetty entre outros, tornando a integração mais fácil.
-
-Identy Brokering and Social Login: Facilidade em adicionar botões de login pelas redes sociais, como facebook, twitter, github, google entre outras.
-
-User Federation: Integração com LDAP ou Active Directory ou até mesmo criar seu próprio provider, caso você tenha seus usuários em outro banco de dados relacional.
 "
 
-"
-Ele permite que os desenvolvedores se concentrem na funcionalidade de negócios, não tendo que se preocupar com os aspectos de segurança da autenticação,
-seja integrando diretamente uma biblioteca que suporta um dos dois protocolos ou usando um módulo no servidor web ou um adaptador Keycloak (não exaustivo lista de possibilidades)
-Ser capaz de centralizar a autenticação e, portanto, habilitar a autenticação de logon único (SSO)
-Ser capaz de unificar os métodos de autenticação e fazê-los evoluir sem modificar as aplicações.
-Reinventar a autenticação de aplicativos SaaS e, assim, controlar a proliferação de identidades digitais; A desativação de contas é simplificada (excluir uma conta SaaS quando um funcionário sai) não é mais esquecido.
+Keycloak é uma ferramenta de gerenciamento de acesso e identidade IAM (Identity and Access Management) de código aberto com foco em ferramentas modernas tais como single-page applications (SPA), aplicativos móveis e APIs REST.
 
-"
-
-"
 Keycloak fornece páginas de login totalmente personalizáveis, incluindo autenticação forte, também com vários fluxos, como recuperação de senhas, exigindo que os usuários atualizem regularmente suas senhas,
 aceitação de termos/ condições e muito mais.
 
@@ -67,7 +42,39 @@ Usuários são entidades capazes de efetuar login no seu sistema. Eles podem ter
 a eles mesmos, como e-mail, nome de usuário, endereço, número de telefone e dia do nascimento.
 Eles podem ser associados ao grupo e ter roles específicas atribuídas a eles.
 
+" - Fonte: https://dev.delivery/seguranca-de-aplicacoes-com-keycloak/
+
+
 "
+Em vez de fazer login em aplicativos individuais, os usuários se autenticam no Keycloak. Isso significa que os aplicativos individuais não precisam implementar seus próprios formulários de login, autenticação e armazenamento de usuários e sessões. Depois de fazer login no Keycloak, os usuários não precisam fazer login novamente para acessar um aplicativo diferente. Da mesma forma, uma vez desconectado do Keycloak, os usuários não precisam sair dos aplicativos individuais. Habilitar o login com redes sociais também é fácil. A configuração para esses itens pode ser adicionada no console administrativo do Keycloak. Nenhum código ou alteração é necessário para as aplicações.
+
+Single-Sign on: Possibilita que o usuário faça login apenas uma vez para acessar todos os sistemas que estejam configurados no keycloak.
+
+Admin Console: O keycloak possui um excelente console administrativo, que facilita muito o cadastro de novos clientes, usuários, roles etc.
+
+Standard Protocols: Keycloak e baseado em protocolos padrão e fornece suporte para OpenID Conect, Oauth 2.0 e SAML.
+
+Client Adapters: Para Jaja, Wildfly, Jboss EAP, JavaScript, Suse, Tomcat, Jetty entre outros, tornando a integração mais fácil.
+
+Identy Brokering and Social Login: Facilidade em adicionar botões de login pelas redes sociais, como facebook, twitter, github, google entre outras.
+
+User Federation: Integração com LDAP ou Active Directory ou até mesmo criar seu próprio provider, caso você tenha seus usuários em outro banco de dados relacional.
+"
+
+"
+A intenção da ferramenta é facilitar a proteção de aplicativos e serviços com pouca ou nenhuma criptografia.
+Um IdP permite que um aplicativo (geralmente chamado de Provedor de Serviços ou SP) delegue sua autenticação.
+
+Isso tem, entre outras coisas, várias vantagens:
+
+- Ele permite que os desenvolvedores se concentrem na funcionalidade de negócios, não tendo que se preocupar com os aspectos de segurança da autenticação,
+seja integrando diretamente uma biblioteca que suporta um dos dois protocolos ou usando um módulo no servidor web ou um adaptador Keycloak 
+- Ser capaz de centralizar a autenticação e, portanto, habilitar a autenticação de logon único (SSO)
+- Ser capaz de unificar os métodos de autenticação e fazê-los evoluir sem modificar as aplicações.
+- Reinventar a autenticação de aplicativos SaaS e, assim, controlar a proliferação de identidades digitais; A desativação de contas é simplificada (excluir uma conta SaaS quando um funcionário sai) não é mais esquecido.
+
+"
+
 
 # Tecnologias Utilizadas
 
