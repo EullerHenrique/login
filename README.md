@@ -46,9 +46,11 @@ Eles podem ser associados ao grupo e ter roles específicas atribuídas a eles.
 
 
 "
+
 Em vez de fazer login em aplicativos individuais, os usuários se autenticam no Keycloak. Isso significa que os aplicativos individuais não precisam implementar seus próprios formulários de login, autenticação e armazenamento de usuários e sessões. Depois de fazer login no Keycloak, os usuários não precisam fazer login novamente para acessar um aplicativo diferente. Da mesma forma, uma vez desconectado do Keycloak, os usuários não precisam sair dos aplicativos individuais. Habilitar o login com redes sociais também é fácil. A configuração para esses itens pode ser adicionada no console administrativo do Keycloak. Nenhum código ou alteração é necessário para as aplicações.
 
-"
+" - Fonte: http://www.tecnisys.com.br/noticias/2020/conhecendo-o-keycloak#:~:text=Isso%20significa%20que%20os%20aplicativos,para%20acessar%20um%20aplicativo%20diferente.
+
 "
 
 O Keycloak possui uma série de funcionalidades que são de interesse de desenvolvedores que querem colocar uma camada de autenticação unificada em suas aplicações, são elas:
@@ -71,8 +73,10 @@ O Keycloak possui uma série de funcionalidades que são de interesse de desenvo
 - Service Provider Interfaces (SPI) – uma série de SPIs para permitir a personalização de vários aspectos do servidor. Fluxos de autenticação, provedores de federação - de usuário, mapeadores de protocolo e muito mais
 - Adaptadores de cliente para aplicativos JavaScript, WildFly, JBoss EAP, Fuse, Tomcat, Jetty, Spring etc.
 - Suporta qualquer plataforma/linguagem que tenha uma biblioteca OpenID Connect Relying Party ou biblioteca de provedor de serviços SAML 2.0
-- 
-"
+
+
+" - Fonte: https://blog.4linux.com.br/gerenciando-identidades-e-acessos-com-keycloak-parte-1/
+
 "
 
 A intenção da ferramenta é facilitar a proteção de aplicativos e serviços com pouca ou nenhuma criptografia.
@@ -86,7 +90,7 @@ seja integrando diretamente uma biblioteca que suporta um dos dois protocolos ou
 - Ser capaz de unificar os métodos de autenticação e fazê-los evoluir sem modificar as aplicações.
 - Reinventar a autenticação de aplicativos SaaS e, assim, controlar a proliferação de identidades digitais; A desativação de contas é simplificada (excluir uma conta SaaS quando um funcionário sai) não é mais esquecido.
 
-"
+" - Fonte: https://blog.desdelinux.net/pt/keycloak-una-solucion-de-gestion-de-acceso-e-identidad-de-codigo-abierto/
 
 # Tecnologias Utilizadas
 
