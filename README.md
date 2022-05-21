@@ -1,3 +1,97 @@
+# Aprendizado
+
+"
+
+Keycloak é uma ferramenta de gerenciamento de acesso e identidade IAM (Identity and Access Management) de código aberto com foco em ferramentas modernas tais como single-page applications (SPA), aplicativos móveis e APIs REST.
+
+Keycloak fornece páginas de login totalmente personalizáveis, incluindo autenticação forte, também com vários fluxos, como recuperação de senhas, exigindo que os usuários atualizem regularmente suas senhas,
+aceitação de termos/ condições e muito mais.
+
+Todas as páginas visíveis para seus usuários suportam temas personalizados, tornando muito fácil modificar a aparência das páginas para integrar-se à sua marca corporativa e aos aplicativos existentes.
+Ao delegar autenticação ao Keycloak, seus aplicativos não precisam se preocupar com diferentes mecanismos de autenticação ou como armazenar senhas com segurança. Esta abordagem também fornece um nível
+mais alto de segurança, pois os aplicativos não têm acesso direto ao usuário e credenciais, eles recebem, em vez disso, tokens de segurança que lhes dão apenas acesso para o que eles precisam.
+
+O Keycloak fornece login único, bem como recursos de gerenciamento de sessão, permitindo que os usuários acessem vários aplicativos, tendo apenas que se autenticar uma vez. Todos os usuários e administradores
+têm total visibilidade de onde os usuários são autenticados e pode encerrar sessões remotamente quando necessário.
+
+Keycloak baseia-se em protocolos padrões da indústria com suporte para OAuth 2.0, OpenID Connect, e SAML 2.0. O uso de protocolos padrões da indústria é importante tanto do ponto de vista de segurança e perspectiva 
+em termos de tornar mais fácil a integração com aplicativos já existentes com aplicativos novos ou aplicativos de terceiros.
+
+Realm
+
+Um realm gerencia um conjunto de usuários, credenciais, funções e grupos. Um usuário que pertence a ele,
+e ele efetua login nesse realm. Realms são isolados uns dos outros e só podem gerenciar e autenticar os
+usuários que pertencem a ele.
+
+Client
+
+Clients são entidades que podem solicitar o Keycloak para autenticar um usuário. Na maioria das vezes,
+os clients são aplicativos e serviços que desejam usar o Keycloak para se proteger e fornecer uma solução
+de logon único. Os clients também podem ser entidades que desejam apenas solicitar informações de identidade
+ou um token de acesso, para que possam invocar com segurança outros serviços na rede protegidos pelo Keycloak.
+
+Realm Role
+
+As aplicações geralmente atribuem acesso e permissões a funções específicas, em vez de usuários individuais,
+pois lidar com usuários pode ser muito difícil de gerenciar. Vamos criar app-user e app-admin roles realm, 
+atribuindo as roles correspondente ao gateway-microservice (user, admin).
+
+User
+
+Usuários são entidades capazes de efetuar login no seu sistema. Eles podem ter atributos associados
+a eles mesmos, como e-mail, nome de usuário, endereço, número de telefone e dia do nascimento.
+Eles podem ser associados ao grupo e ter roles específicas atribuídas a eles.
+
+" - Fonte: https://dev.delivery/seguranca-de-aplicacoes-com-keycloak/
+
+
+"
+
+Em vez de fazer login em aplicativos individuais, os usuários se autenticam no Keycloak. Isso significa que os aplicativos individuais não precisam implementar seus próprios formulários de login, autenticação e armazenamento de usuários e sessões. Depois de fazer login no Keycloak, os usuários não precisam fazer login novamente para acessar um aplicativo diferente. Da mesma forma, uma vez desconectado do Keycloak, os usuários não precisam sair dos aplicativos individuais. Habilitar o login com redes sociais também é fácil. A configuração para esses itens pode ser adicionada no console administrativo do Keycloak. Nenhum código ou alteração é necessário para as aplicações.
+
+" - Fonte: http://www.tecnisys.com.br/noticias/2020/conhecendo-o-keycloak#:~:text=Isso%20significa%20que%20os%20aplicativos,para%20acessar%20um%20aplicativo%20diferente.
+
+"
+
+O Keycloak possui uma série de funcionalidades que são de interesse de desenvolvedores que querem colocar uma camada de autenticação unificada em suas aplicações, são elas:
+- Single-Sign On e Single-Sign Out
+- Suporte à OpenID Connect
+- Suporte à OAuth 2.0
+- Suporte à SAML
+- Identity Brokering – Autentique com OpenID Connect externo ou provedores de identidade SAML
+- Login social – Habilite o login com Google, GitHub, Facebook, Twitter e outras redes sociais
+- Federação do usuário – Sincronize usuários de servidores LDAP e Active Directory
+- Kerberos bridge – Autentique automaticamente os usuários que estão logados em um servidor Kerberos
+- Console Admin para gerenciamento central de usuários, funções, mapeamentos de funções, clientes e configuração
+- Console de gerenciamento de contas que permite aos usuários gerenciar centralmente suas contas
+- Suporte a temas – personalize todas as páginas voltadas para o usuário para integrá-las aos seus aplicativos e marcas
+- Autenticação de dois fatores – suporte para TOTP / HOTP via Google Authenticator ou FreeOTP
+- Fluxos de login – auto-registro opcional do usuário, recuperar senha, verificar e-mail, exigir atualização de senha etc.
+- Gerenciamento de sessão – os próprios administradores e usuários podem visualizar e gerenciar as sessões do usuário
+- Mapeadores de tokens – Mapeie atributos de usuário, funções e demais recursos como desejar em tokens e instruções
+- Suporte a CORS – os adaptadores de cliente possuem suporte integrado para CORS
+- Service Provider Interfaces (SPI) – uma série de SPIs para permitir a personalização de vários aspectos do servidor. Fluxos de autenticação, provedores de federação - de usuário, mapeadores de protocolo e muito mais
+- Adaptadores de cliente para aplicativos JavaScript, WildFly, JBoss EAP, Fuse, Tomcat, Jetty, Spring etc.
+- Suporta qualquer plataforma/linguagem que tenha uma biblioteca OpenID Connect Relying Party ou biblioteca de provedor de serviços SAML 2.0
+
+
+" - Fonte: https://blog.4linux.com.br/gerenciando-identidades-e-acessos-com-keycloak-parte-1/
+
+"
+
+A intenção da ferramenta é facilitar a proteção de aplicativos e serviços com pouca ou nenhuma criptografia.
+Um IdP permite que um aplicativo (geralmente chamado de Provedor de Serviços ou SP) delegue sua autenticação.
+
+Isso tem, entre outras coisas, várias vantagens:
+
+- Ele permite que os desenvolvedores se concentrem na funcionalidade de negócios, não tendo que se preocupar com os aspectos de segurança da autenticação,
+seja integrando diretamente uma biblioteca que suporta um dos dois protocolos ou usando um módulo no servidor web ou um adaptador Keycloak 
+- Ser capaz de centralizar a autenticação e, portanto, habilitar a autenticação de logon único (SSO)
+- Ser capaz de unificar os métodos de autenticação e fazê-los evoluir sem modificar as aplicações.
+- Reinventar a autenticação de aplicativos SaaS e, assim, controlar a proliferação de identidades digitais; A desativação de contas é simplificada (excluir uma conta SaaS quando um funcionário sai) não é mais esquecido.
+
+" - Fonte: https://blog.desdelinux.net/pt/keycloak-una-solucion-de-gestion-de-acceso-e-identidad-de-codigo-abierto/
+
 # Tecnologias Utilizadas
 
 ## Front-End
@@ -79,4 +173,7 @@
 # Diagrama
 
 ![KC drawio (2)](https://user-images.githubusercontent.com/48317736/168608333-84a2c74b-821b-4fc5-8072-0eaf7d958ddd.png)
+
+
+
 
