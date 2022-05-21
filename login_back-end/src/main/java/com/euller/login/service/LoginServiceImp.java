@@ -35,7 +35,13 @@ public class LoginServiceImp implements LoginService{
     @Override
     public String getPreferredUsername(Principal principal){
 
-        //getPreferredUsername() - > euller
+        //User
+        //
+        //Usuários são entidades capazes de efetuar login no seu sistema. Eles podem ter atributos associados
+        //a eles mesmos, como e-mail, nome de usuário, endereço, número de telefone e dia do nascimento.
+        //Eles podem ser associados ao grupo e ter roles específicas atribuídas a eles.
+
+        //user -> getPreferredUsername() - > euller
 
         return getAccessToken(principal).getPreferredUsername();
     }

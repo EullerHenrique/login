@@ -3,6 +3,6 @@ import java.security.Principal;
 
 public interface LoginService {
 
-    public String getPreferredUsername(Principal principal);
+    String getPreferredUsername(Principal principal);
 
 }

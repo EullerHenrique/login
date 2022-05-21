@@ -68,6 +68,12 @@ class SecurityConfig extends KeycloakWebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         super.configure(http);
+
+        //Realm Role
+        //
+        //As aplicações geralmente atribuem acesso e permissões a funções específicas, em vez de usuários individuais,
+        //pois lidar com usuários pode ser muito difícil de gerenciar.
+
         http.authorizeRequests()
                 //O usuário associado à role user pode acessar o endpoint /user
                 .antMatchers("/user").hasRole("user")
