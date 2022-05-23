@@ -127,17 +127,17 @@ seja integrando diretamente uma biblioteca que suporta um dos dois protocolos ou
  2. Acesse "Adminstration Console"
  3. Realize o login (User: admin, Senha: 12345)
  4. Crie o Realm login
- 5. Crie o Client node
- 6. Atribua o valor "http://localhost:8082/*" ao atrbuto "Valid Redirect URIs"
- 7. Crie o Client Spring
- 8. Atribua o valor "http://localhost:8080/* ao atributo "Valid Redirect URIs"
- 9. Crie a Role User
- 10. Crie a Role Admin
- 11. Crie o User admin
- 12. Crie o User euller
- 13. Atribua o User admin à Role Admin
- 14. Atribua o User euller à Role euller
- 
+ 5. Vá na aba login e ative a opção Forgot password
+ 6. Crie o Client node
+ 7. Atribua o valor "http://localhost:8082/*" ao atrbuto "Valid Redirect URIs"
+ 8. Crie o Client Spring
+ 9. Atribua o valor "http://localhost:8080/* ao atributo "Valid Redirect URIs"
+ 10. Crie a Role User
+ 11. Crie a Role Admin
+ 13. Crie o User admin (Atribua o valor admin@gmail.com ao atributo email)
+ 15. Crie o User euller (Atribua o valor euller@gmail.com ao atributo email)
+ 16. Atribua o User admin à Role Admin
+ 17. Atribua o User euller à Role euller
  
  Obs: Realize essa configuração somente se desejar uma confifuração personalizada, pois essa configuração foi salva em um volume do docker (pasta postgres) 
 
