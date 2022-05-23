@@ -191,6 +191,13 @@ seja integrando diretamente uma biblioteca que suporta um dos dois protocolos ou
 
 <img width="637" alt="Captura de tela 2022-05-19 165242" src="https://user-images.githubusercontent.com/48317736/169392458-fcba3198-f556-4d03-9011-755793ee5939.png">
 
+####  - Esqueceu sua senha? - 
+ 
+<img width="704" alt="Captura de tela 2022-05-23 135409" src="https://user-images.githubusercontent.com/48317736/169870281-8954ee76-a152-440d-b1da-0c77df189bfd.png">
+<img width="709" alt="Captura de tela 2022-05-23 135424" src="https://user-images.githubusercontent.com/48317736/169870282-5f6de893-c629-40f4-962f-e43ef801fede.png">
+<img width="636" alt="Captura de tela 2022-05-23 135513" src="https://user-images.githubusercontent.com/48317736/169870276-a1cedac5-586e-40c9-a4d7-ed5b9ada72a9.png">
+<img width="632" alt="Captura de tela 2022-05-23 135530" src="https://user-images.githubusercontent.com/48317736/169870289-76650c1e-67b1-46eb-9cd0-6528c1be7505.png">
+
 ### localhost:8082/user
 
 <img width="395" alt="Captura de tela 2022-05-19 162835" src="https://user-images.githubusercontent.com/48317736/169388330-a68750f9-24a3-46db-8f32-bbde53becfd8.png">
