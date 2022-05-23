@@ -177,7 +177,10 @@ seja integrando diretamente uma biblioteca que suporta um dos dois protocolos ou
 
 ## MailHog
 
-### localhost:10
+### localhost:8025
+
+<img width="962" alt="Captura de tela 2022-05-23 133722" src="https://user-images.githubusercontent.com/48317736/169869537-96d3d807-00a4-41ec-bdde-c158ad6cd988.png">
+
 
 ## Front-End
 
