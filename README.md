@@ -1,4 +1,4 @@
-# Aprendizado
+# Conceito
 
 "
 
@@ -109,6 +109,7 @@ seja integrando diretamente uma biblioteca que suporta um dos dois protocolos ou
  - Docker
  - Lombok
  - KeyCloak
+ - MailHog
 
 # Execução
 
@@ -120,7 +121,38 @@ seja integrando diretamente uma biblioteca que suporta um dos dois protocolos ou
   4. Abra o terminal
   5. Navegue até a pasta docker
   6. Digite docker-compose up -d
-  
+
+## Keycloak
+
+ 1. Acesse localhost:8081
+ 2. Acesse "Adminstration Console"
+ 3. Realize o login (User: admin, Senha: 12345)
+ 4. Aperte o botão "keycloak" localizado no canto superior direito
+ 5. Aperte o botão "Manage account"
+ 6. Aperte o botão "Personal Info"
+ 7. Atribua o valor "keycloak@gmail" ao atrbuto "Email"
+ 9. Aperte o botão "Back to security admin console" no canto superior direito
+ 10. Crie o Realm login
+ 11. Vá na aba login 
+ 12. Ative a opção Forgot password
+ 13. Vá na aba email 
+ 14. Atribua o valor "mailhog" ao atrbuto "Host"
+ 15. Atribua o valor "1025" ao atrbuto "Port"
+ 16. Atribua o valor "keycloak@gmail.com" ao atrbuto "From"
+ 17. Aperte o botão "Test Connection"
+ 18. Crie o Client node
+ 19. Atribua o valor "http://localhost:8082/*" ao atrbuto "Valid Redirect URIs"
+ 20. Crie o Client Spring
+ 21. Atribua o valor "http://localhost:8080/* ao atributo "Valid Redirect URIs"
+ 22. Crie a Role User
+ 23. Crie a Role Admin
+ 24. Crie o User admin (Atribua o valor admin@gmail.com ao atributo email)
+ 25. Crie o User euller (Atribua o valor euller@gmail.com ao atributo email)
+ 26. Atribua o User admin à Role Admin
+ 27. Atribua o User euller à Role euller
+ 
+ Obs: Realize essa configuração somente se desejar uma confifuração personalizada, pois essa configuração já foi feita e foi salva em um volume do docker (pasta postgres) 
+
 ## Front-End
  
   1. Abra a pasta login_fron-end em uma IDE (Ex: Visual Studio Code) 
@@ -143,6 +175,13 @@ seja integrando diretamente uma biblioteca que suporta um dos dois protocolos ou
 
 <img width="603" alt="Captura de tela 2022-05-19 164111" src="https://user-images.githubusercontent.com/48317736/169389430-e241890f-3b82-4255-a066-a556c386b971.png">
 
+## MailHog
+
+### localhost:8025
+
+<img width="962" alt="Captura de tela 2022-05-23 133722" src="https://user-images.githubusercontent.com/48317736/169869537-96d3d807-00a4-41ec-bdde-c158ad6cd988.png">
+
+
 ## Front-End
 
 ### localhost:8082/login
@@ -150,7 +189,15 @@ seja integrando diretamente uma biblioteca que suporta um dos dois protocolos ou
   1. Usuário: euller Senha: 12345     
   2. Usuário: admin Senha: 12345
 
-<img width="637" alt="Captura de tela 2022-05-19 165242" src="https://user-images.githubusercontent.com/48317736/169392458-fcba3198-f556-4d03-9011-755793ee5939.png">
+<img width="632" alt="Captura de tela 2022-05-23 140023" src="https://user-images.githubusercontent.com/48317736/169870911-d2a68c16-a498-48c8-a660-fd43ed92a820.png">
+
+
+### localhost:8082/login - Esqueceu sua senha? 
+ 
+<img width="704" alt="Captura de tela 2022-05-23 135409" src="https://user-images.githubusercontent.com/48317736/169870281-8954ee76-a152-440d-b1da-0c77df189bfd.png">
+<img width="709" alt="Captura de tela 2022-05-23 135424" src="https://user-images.githubusercontent.com/48317736/169870282-5f6de893-c629-40f4-962f-e43ef801fede.png">
+<img width="636" alt="Captura de tela 2022-05-23 135513" src="https://user-images.githubusercontent.com/48317736/169870276-a1cedac5-586e-40c9-a4d7-ed5b9ada72a9.png">
+<img width="632" alt="Captura de tela 2022-05-23 135530" src="https://user-images.githubusercontent.com/48317736/169870289-76650c1e-67b1-46eb-9cd0-6528c1be7505.png">
 
 ### localhost:8082/user
 
