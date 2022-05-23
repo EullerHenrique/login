@@ -175,6 +175,10 @@ seja integrando diretamente uma biblioteca que suporta um dos dois protocolos ou
 
 <img width="603" alt="Captura de tela 2022-05-19 164111" src="https://user-images.githubusercontent.com/48317736/169389430-e241890f-3b82-4255-a066-a556c386b971.png">
 
+## MailHog
+
+### localhost:10
+
 ## Front-End
 
 ### localhost:8082/login
