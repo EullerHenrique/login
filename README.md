@@ -6,7 +6,7 @@
 
 - [Configuração](#configuração)
 
-- [Endpoints](#Endpoints)
+- [Endpoints](#endpoints)
 
 - [Diagrama](#diagrama)
 
